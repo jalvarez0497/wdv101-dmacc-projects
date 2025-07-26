@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Share+Tech&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+header > p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 9rem;
+    justify-content: center;
+    list-style: none;
+    padding: 0.5rem;
+    border-bottom: 2px solid rgb(67, 22, 1);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display", serif;
+}
+
+h1,
+h2,
+h3,
+p,
+th,
+td,
+ol {
+    color: rgb(106, 35, 2);
+}
+
+h1 {
+    font-size: 3rem;
+    border-bottom: 2px solid rgb(67, 22, 1);
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+tr,
+th,
+td {
+    border: 1px solid black;
+}
+td {
+    padding: 0.5rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    font-family: "playfair display", serif;
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(155, 108, 15);
+}
+
+a:hover {
+  color: rgb(30, 104, 14);
+}
+
+a:visited {
+  color: purple; 
+}
+
+a:active {
+  color: rgb(28, 1, 179);
+}
+
+figcaption {
+    text-align: end;
+    margin-bottom: 1rem;
+    color: chocolate;
+    font-weight: 900;
+}
+
+ol {
+    padding: 1rem;
+    font-weight: 600;
+}
+
+footer {
+    border-top: 2px solid rgb(67, 22, 1);
+    padding: 1rem;
+    background-color: rgba(148, 146, 146, 0.3);
+}
+
+footer > ul {
+    list-style: url(images/cacao-logo.png);
+    padding-left: 2rem;
+    padding-bottom: .5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-left: 1px solid rgba(67, 22, 1, 0.5);
+    border-right: 1px solid rgba(67, 22, 1, 0.5);
+}

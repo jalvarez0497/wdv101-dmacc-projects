@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Signika:wght@300..700&display=swap');
+
+body {
+    background-color: rgb(30, 41, 51);
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-size: 16px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: url(images/homework_icon.png);
+}
+
+a:link, a:visited {
+    color: rgb(1, 230, 255);
+}
+
+a:hover, a:focus {
+    color: rgb(255, 255, 255);
+}
+
+.profile-picture {
+    height: 500px;
+    width: 500px;
+    float: right;
+    background-color: rgb(2, 21, 39);
+    border-radius: 30rem;
+    border-style: solid;
+}
