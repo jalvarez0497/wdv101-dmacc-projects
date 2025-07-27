@@ -64,20 +64,24 @@ p {
 }
 
 nav {
+    display: flex;
     background-color: #ffc937;
-    box-sizing: border-box;
     padding: 0.50rem;
     border-color: black;
     border-style: groove;
     border-width: .5rem;
     border-radius: .5rem;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
 }
 
 nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     list-style-type: none;
     align-items: center;
-    display: flex;
-    justify-content: space-around;
     gap : 2.5rem;
     padding-left: 0rem;
     font-weight: 700;
