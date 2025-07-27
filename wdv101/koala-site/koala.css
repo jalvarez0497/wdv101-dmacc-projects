@@ -258,3 +258,72 @@ ul.about-unordered-list {
 #koala-resting {
     margin-bottom: 1rem;
 }
+
+/*Adopt a koala flex container*/
+form {		
+    display: flex;
+    flex-direction: column; 
+    background-color:#BDCFDB;;
+    width:90%;
+    padding:0.5em;
+    margin:1.5em auto;
+    border:thin solid black;
+    border-radius:10px;
+}
+		
+ 	
+.flex-form {
+    display: flex;
+    margin-bottom:0.3em;
+}
+
+
+
+.flex-form label {
+
+    text-align: right ;
+    margin-top: 0.5em;
+    margin-right:0.5em;
+}	
+    
+.flex-form input, select, textarea {
+    flex: 1;
+}
+        
+        
+.flex-radio  {
+    display:flex;
+
+    flex-direction:     ;
+    justify-content:    ;
+    margin-left:1.8em;
+    margin-top:1.2em;
+    margin-bottom:1.2em;
+}
+    
+
+    
+.flex-radio  label {
+margin-right:1.8em;}
+
+.flex-buttons  {
+    display:flex;
+    justify-content:      ;
+}
+
+
+
+textarea {
+    height:200px;
+    width: 100%;
+}
+
+fieldset {	
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:0.5em;
+    padding:0.5em;
+}
+
+/* End flex css */	
