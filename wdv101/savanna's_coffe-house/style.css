@@ -111,6 +111,10 @@ i {
   color: white;
 }
 
+#footer a {
+  color: white;
+}
+
 #events-preview {
   padding: 2rem;
 }

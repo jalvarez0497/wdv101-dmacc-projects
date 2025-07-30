@@ -67,6 +67,10 @@ li {
     list-style: url(../images/koala_icon.png);
 }
 
+#sch {
+    list-style: url(../images/coffee-logo.png);
+}
+
 .profile-picture {
     height: 500px;
     width: 500px;
