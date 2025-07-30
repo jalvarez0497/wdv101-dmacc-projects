@@ -1,101 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Savanna's Coffe House - Contact Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savanna's Coffee House - Contact Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!--navbar goes here-->
-    <nav class="navbar navbar-expand-md bg-warning navbar-light sticky-top">
-        <div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top" id="nav">
+      <div class="container">
         <i class="bi bi-cup-hot mx-3 display-6"></i>
-        <a class="navbar-brand"href="#nav">
-            Savanna's Coffe House
-        </a>
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-            <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand" href="#form"> Savanna's Coffee House </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="nav">
-            <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-            </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
         </div>
-        </div>
+      </div>
     </nav>
+
+    <section class="container">
+      <!--This is just to create white space in my contact page so the form looks centralized-->
+    </section>
 
     <!--Form Section-->
 
-    <section class="bg-light text-dark">
-        <div class="container">
-            <h1 class="display-1 text-center">
-                Contact Us
-            </h1>
-            <p>
-                We'd love to hear from you! Please fill out the form below with any questions, comments, or feedback you may have.
-            </p>
+    <section id="form">
+      <div class="container">
+        <div id="form-overlay">
+          <h1 class="display-1 text-center">Contact Us</h1>
+          <p>
+            We'd love to hear from you! Please fill out the form below with any
+            questions, comments, or feedback you may have.
+          </p>
 
-            <form action="files/form_response_basic.php" method="post" class="row g-3">
-                <div class="col-md-6">
-                    <label for="fname" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="fname" name="fname" required>
-                </div>
-                <div class="col-md-6">
-                    <label for="lname" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="lname" name="lname" required>
-                </div>
-                <div class="col-12">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" pattern="" required>
-                </div>
-                <div class="col-12">
-                    <label for="tel" class="form-label">Phone Number</label>
-                    <p class="text-muted">Only if you want us to call you.</p>
-                    <input type="tel" class="form-control" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" maxlength="12">
-                </div>
-                <div class="col-12">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </div>
+          <form
+            action="files/form_response_basic.php"
+            method="post"
+            class="row g-3"
+          >
+            <div class="col-md-6">
+              <label for="fname" class="form-label">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="fname"
+                name="fname"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="lname" class="form-label">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lname"
+                name="lname"
+                required
+              />
+            </div>
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="col-12">
+              <label for="tel" class="form-label">Phone Number</label>
+              <p class="text-muted">Only if you want us to call you.</p>
+              <input
+                type="tel"
+                class="form-control"
+                id="tel"
+                name="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="123-456-7890"
+                maxlength="12"
+              />
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn">Send Message</button>
+            </div>
+          </form>
         </div>
+      </div>
     </section>
 
     <!--Footer Section-->
-    <section class="bg-warning text-dark" id="footer">
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col col-md-6">
-                    <h6>Savanna's Coffee House</h6>
-                    <h6>604 24th Street</h6>
-                    <h6>St.Paul, Minnesota</h6>
-                    <p class="text-muted">
-                        <i class="bi bi-telephone"></i> 702-971-1154
-                    </p>
-                </div> <!--End of Address Column-->
-                <div class="col col-md-6">
-                    <h6>Hours:</h6>
-                    <ol class="list-unstyled">
-                        <li>Sunday: 7:00 AM - 9:00 PM</li>
-                        <li>Monday - Thursday: 6:00 AM - 10:00 PM</li>
-                        <li>Friday: 6:00 AM - 11:00 PM</li>
-                        <li>Saturday: 6:30 AM - 11:00 PM</li>
-                    </ol>
-                </div> <!--End of Hours Column-->
-            </div>
+    <section id="footer">
+      <div class="container-fluid px-5">
+        <div class="row">
+          <div class="col col-md-6">
+            <h6>Savanna's Coffee House</h6>
+            <h6>604 24th Street</h6>
+            <h6>St.Paul, Minnesota</h6>
+            <p><i class="bi bi-telephone"></i> 702-971-1154</p>
+          </div>
+          <!--End of Address Column-->
+          <div class="col col-md-6">
+            <h6>Hours:</h6>
+            <ol class="list-unstyled">
+              <li>Sunday: 7:00 AM - 9:00 PM</li>
+              <li>Monday - Thursday: 6:00 AM - 10:00 PM</li>
+              <li>Friday: 6:00 AM - 11:00 PM</li>
+              <li>Saturday: 6:30 AM - 11:00 PM</li>
+            </ol>
+          </div>
+          <!--End of Hours Column-->
         </div>
-    </section> <!--End of Footer Section-->
+      </div>
+    </section>
+    <!--End of Footer Section-->
 
     <!--CDN via jsDelivr script-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

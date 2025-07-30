@@ -1,25 +1,215 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Share+Tech&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Petemoss&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Share+Tech&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #ead8bb;
 }
 
 nav {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 section:not(#footer) {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", "Share Tech", Tinos, "Times New Roman", Times,
+    serif;
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: 212529;
+  background-color: rgba(241, 241, 240, 0.3);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 3rem;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+nav {
+  background-color: #7b3f00;
+  color: white;
+}
+
+nav a {
+  color: white;
+}
+
+i {
+  color: white;
+}
+
+.container-lg .card {
+  background-color: #e0bfa261;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+/* Id changes with selectors and classes*/
 #footer {
-    flex-shrink: 0;
-    width: 100%;
-    margin-top: auto;
+  flex-shrink: 0;
+  width: 100%;
+  margin-top: auto;
+  background-color: #7b3f00;
+  color: white;
+}
+
+#events-preview {
+  padding: 2rem;
+}
+
+#events-preview .card-text {
+  text-align: center;
+}
+
+#menu li {
+  font-family: Petemoss, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+#events-page .card {
+  background-color: #e0bfa261;
+  color: black;
+}
+
+#about-preview {
+  background-color: #ead8bb;
+}
+
+body #features {
+  background-image: url(images/coffee-beans-feature.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+#features .container {
+  background-color: #ead8bbc1;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+#menu i {
+  color: #212529;
+}
+
+#menu p {
+  font-weight: 600;
+}
+
+#form .container {
+  background-image: url(images/inside-coffee-house.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#form #form-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+body #about-page {
+  background-image: url(images/coffee-beans.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#about-page .container .col {
+  background-color: rgba(60, 60, 60, 0.484);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+/* Links Styles */
+#about-page a:link {
+  color: #ffc107;
+}
+
+#about-page a:hover {
+  color: rgb(28, 1, 179);
+}
+
+#about-page a:visited {
+  color: rgb(255, 12, 255);
+}
+
+#about-page a:active {
+  color: rgb(28, 1, 179);
+}
+
+/* Btn colors */
+#about-preview .btn,
+#events-preview .btn,
+#form .btn {
+  background-color: #a37c53;
+  color: white;
 }
