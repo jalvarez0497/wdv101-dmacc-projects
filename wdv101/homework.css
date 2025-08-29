@@ -43,6 +43,14 @@ li {
     padding: .5rem;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    
+}
+
 #home {
     list-style: url(../images/homepage_icon.png);
 }
