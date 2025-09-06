@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions In Class Activity</title>
+</head>
+<body>
+    <h1>WDV221 Intro to JavaScript Function In Class Activity</h1>
+    <script>
+        const makeGreeting = (name, programmingLanguage) => {
+            return `<p>Hello, ${name}! I like to write ${programmingLanguage} code.</p>`;
+        }
+
+        const outputGreeting = (name, programmingLanguage) => {
+            const greeting = makeGreeting(name, programmingLanguage);
+            const outputParagraphTag = document.getElementById("output");
+            const currentContent = outputParagraphTag.innerHTML;
+            outputParagraphTag.innerHTML = `${currentContent}  ${greeting}`;
+
+        }
+        //document.write(makeGreeting("Jean", "JavaScript"));
+        //document.write(makeGreeting("World", "HTML"));
+        //document.write(makeGreeting("Erik", "CSS"));
+        //document.write(makeGreeting("Alice", "PHP"));
+    </script>
+    <p id="output"></p>
+    <button onClick="outputGreeting('Jean', 'JavaScript')">Add Greeting</button>
+</body>
+</html>

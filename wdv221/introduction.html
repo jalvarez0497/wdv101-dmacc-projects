@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>WDV221 Intro Javascript</title>
+
+	<style>
+		div#container	{
+			width:960px;
+			margin:auto;
+			padding:10px;
+			background-color:white;	
+			border:thin solid black;
+		}
+	</style>
+
+	<script>
+		  window.alert('You are on your way to working with Javascript');
+	</script>
+</head>
+
+<body>
+	<div id="container">
+        <script>
+            document.write("<h1>WDV221 Intro Javascript</h1>");
+
+        </script>
+		
+
+        <h2 id="welcomeMessage">Hello firstname! Welcome to JavaScript</h2>
+
+        <script>
+            const h2 = document.getElementById('welcomeMessage');
+            h2.textContent = h2.textContent.replace('firstname', 'Jean');
+        </script>
+
+        
+        <script>
+            document.write("<h3>Introduction to Javascript - Assignment 1</h3>");
+        </script>		
+
+        <script>
+            document.write("<h3>I am studying for the Associate in Applied Science Degree</h3>");
+        </script>
+
+        <script>
+            console.log("Jean Alvarez Robles");
+            console.log("Computer Information Systems");
+        </script>
+
+
+		<p>Tasks:</p>
+		<p>1. Add a run time script that will replace the words 'firstname' with your name in the content of the h2 element. </p>
+		<p>2. Add a run time script that will create an h3 element with the the words "I am studying for the ??? Degree". Please include your own degree name.</p>
+		<p>3. Create a run time script that will display your name and major on the console log.</p>
+		<p>4. Fix the run time script on this page.</p>
+
+	</div>
+</body>
+</html>
