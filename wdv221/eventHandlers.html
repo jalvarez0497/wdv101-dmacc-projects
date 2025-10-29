@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicing with Event Handlers</title>
+</head>
+<body onload="console.log('Page Loaded')">
+    <h1>5-1: Event Handlers</h1>
+
+    <h3>Task 1:</h3>
+    <p>Click Event Handler using HTML event handler and JS onmouseover:</p>
+    <button id="assignmentBtn"onclick="displayAssignmentTitle()">Display Assignment Title</button>
+
+    <h3>Task 2:</h3>
+    <p id="myPElement" onmouseover="console.log('Using the onmouseover HTML event handler')">Hover over this text to see what happens on the console.</p>
+
+
+    <h3>Task 3:</h3>
+    <img id="image" src="pictures/ai-generated-8684869_1280.jpg" alt="person sitting on a desk coding" width="300">
+
+    <h3>Task 4:</h3>
+    <select id="programmingLanguages">
+        <option value="">Select your favorite programming Language</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+    </select>
+
+    <script>
+        function displayAssignmentTitle() {
+            console.log("5-1: Event Handlers - (Using HTML event handler)")
+        }
+
+        document.getElementById("assignmentBtn").onmouseover = function() {
+            console.log("5-1: Event Handlers - (Using onmouseover JS event handler)");
+        };
+
+        document.getElementById("myPElement").addEventListener("mouseout", function() {
+            console.log("Using addEventListener to handle mouseout event (JS event handler)");
+
+        });
+
+        document.getElementById("image").addEventListener("click", function() {
+            console.log("Using addEventListener to handle click event on image (JS event handler)");
+        });
+
+        document.getElementById("programmingLanguages").onchange = function() {
+            console.log("You selected: " + this.value);
+        };
+    </script>
+</body>
+</html>

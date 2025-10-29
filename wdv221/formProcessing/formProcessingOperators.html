@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WDV221 Intro Javascript - Operators and Textfields Assignment</title>
+
+    <script src="../formProcessing/script.js" defer></script>
+	<link rel="stylesheet" href="../formProcessing/style.css">
+</head>
+
+<body>
+<h2>WDV221 Intro Javascript</h2>
+	<h3>Form Processing, Operators </h3>
+	<hr />
+<p>Include a comment in each script with the exercise number and a description of what the script is supposed to do.</p>
+	<hr />
+<h3>Instructions</h3>
+<p>Use the form fields for the input values. For each of the following exercises create a function what will be activated by the button.  </p>
+<p>For problems 1. and 2. display the results into the provided text fields.</p>
+<p>For problems 3., 4. and 5. display the results in the span elements. Provide some CSS styling to highlight the displayed content. </p>
+<p>The Reset button should clear all form fields and all display fields</p>
+
+<form id="form1" method="post" action="">
+    <!--Div for value 1 input box-->
+    <div class="row">
+        <label for="value1" class="label">Enter a number for value1:</label>
+        <input type="text" id="value1">
+    </div>
+    <!--Div for value 2 input box-->
+    <div class="row">
+        <label for="value2" class="label">Enter a number for value2:</label>
+        <input type="text" id="value2">
+    </div>
+    <!--Display value 1-->
+    <div class="row">
+        <input type="submit" id="btnValue1" value="Display Value1" />
+        <span>Display the value you entered for value1: </span>
+        <input type="text" id="value1Box" readonly />
+    </div>
+    <!--Display value 2-->
+    <div class="row">
+        <input type="submit" id="btnValue2" value="Display Value2" />
+        <span>Display the value you entered for value2: </span>
+        <input type="text" id="value2Box" readonly />
+    </div>
+    <!--Multiply value 1 and value 2-->
+    <div class="row">
+        <input type="submit" id="multiplyBtn" value="Multiply" />
+        <span>Display the value of value1 * value2: </span>
+        <span id="multiplyResult" class="result"></span>
+    </div>
+    <!--Add value 1 and value 2-->
+    <div class="row">
+        <input type="submit" id="addBtn" value="Add" />
+        <span>Display the results of value1 + value2 in the following textfield: </span>
+        <span id="addResult" class="result"></span>
+    </div>
+    <!--Increment count-->
+    <div class="row">
+        <input type="submit" id="incrementBtn" value="Increment count" />
+        <span>Use the increment operator to add 1 to count and display the new value of count: </span>
+        <span id="incrementResult" class="result"></span>
+    </div>
+    <!--Display random number between 1 and 10-->
+    <div class="row">
+        <button id="randomBtn">Random Number</button>
+        <span>Display a random number between 1 and 10: </span>
+        <span id="randomResult" class="result"></span>
+    </div>
+    <!--Reset button-->
+    <div class="row">
+        <input type="reset" name="Reset" id="resetBtn" value="Try Again">
+    </div>
+
+</form>
+</body>
+</html>
