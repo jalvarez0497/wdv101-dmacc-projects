@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test BankAccount</title>
+</head>
+<body>
+    <h1>Testing BankAccount class</h1>
+
+    <pre id="output"></pre>
+
+    <script src="../unit12/BankAccount.js"></script>
+
+    <script>
+
+
+        const checkingAccount = new BankAccount(800);
+
+        checkingAccount.setAccountName("Jean's Debit Account");
+        checkingAccount.setAccountNumber("987654321");
+
+        checkingAccount.deposit(100);
+        checkingAccount.withdraw(500);
+
+        const accInfo = checkingAccount.accountInfo();
+        const transactions = checkingAccount.getAccountTransactions();
+
+        const output = document.getElementById("output");
+        output.textContent = "Account Information" +
+        "\n" + accInfo[0] +
+        "\n" + accInfo[1] +
+        "\n" + accInfo[2] +
+        "\n\nTransactions:\n" +
+        JSON.stringify(transactions, null, 2);
+
+    </script>
+
+
+</body>
+</html>
